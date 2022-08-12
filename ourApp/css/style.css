@@ -7,13 +7,13 @@
 }
 #cont_left {
   float: left;
-  width: 150px;
-  height: 969px;
-  background: #222a35;
+  width: 95px;
+  height: 1024px;
+  background-color: #081a1d;
 }
 #cont_center {
   height: 969px;
-  background: #4472c4;
+  /* background: #4472c4; */
 }
 #container {
   display: block;
@@ -61,7 +61,114 @@
   border: 1px solid #d2d2d2;
   border-radius: 0.25rem;
 }
-#button {
+#btn {
   display: block;
   margin: 0 auto;
+}
+
+#nodes {
+  position: absolute;
+  width: 510px;
+  height: 853px;
+  left: 106px;
+  top: 132px;
+}
+
+#nodeletter {
+  position: absolute;
+  width: 121px;
+  height: 55px;
+  left: 195px;
+  top: 0px;
+
+  font-family: 'sans-serif';
+  font-style: bold;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#shownodes {
+  padding-left: 50px;
+  position: absolute;
+  width: 510px;
+  height: 608px;
+  left: 0px;
+  top: 87px;
+  overflow-y: scroll;
+}
+
+.node {
+  /* width: 257px; */
+  padding-left:10px;
+  padding-right: 10px;
+  /* position: absolute; */
+  /* left: 0%;
+  right: -6.2%;
+  top: 0%;
+  bottom: 0%; */
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: 'sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  /* float : left; */
+  display:inline;
+  align: center;
+}
+
+.node:hover {
+  background-color: #84858A;
+  cursor: pointer;
+}
+
+.ms {
+  margin-right: 80px;
+  display:inline;
+  float: right;
+}
+
+.nodeframe {
+  /* position: absolute; */
+  /* width: 457px;
+  height: 38px; */
+  /* float: left; */
+}
+
+#showchart {
+
+  width: 329px;
+  height: 63px;
+
+
+  background-color: #081A1D;
+  border-radius: 40px;
+  font-family: 'sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  /* display: flex; */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#showbutton {
+  position: absolute;
+  left: 92px;
+  top:750px;
+}
+
+#showchart:hover {
+  background-color: #05106D;
+  cursor: pointer;
 }
