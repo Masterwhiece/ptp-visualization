@@ -1,20 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
 
 #header {
+  /* 헤더 */
   width: 100%;
   height: 80px;
   background-color: #081a1d;
 }
-#cont_left {
+#cont_left { 
+  /* 왼쪽 바  */
   float: left;
   width: 95px;
   height: 1024px;
   background-color: #081a1d;
 }
 #cont_center {
+  /* 가운데 작업 공간, 흰색 바탕 */
   height: 969px;
-  /* background: #4472c4; */
 }
+#nodes {
+  /* 노드 리스트 제목부터, 리스트, 밑에 쇼차트 버튼까지 */
+  position: absolute;
+  width: 510px;
+  height: 853px;
+  left: 106px;
+  top: 132px;
+}
+#shownodes {
+  /* 노드 리스트 부분만, 크기위치 고정에 더 커지면 스크롤 */
+  padding-left: 50px;
+  position: absolute;
+  width: 510px;
+  height: 608px;
+  left: 0px;
+  top: 87px;
+  overflow-y: scroll;
+}
+#nodeletter {
+  /* 노드 리스트 제목*/
+  position: absolute;
+  width: 121px;
+  height: 55px;
+  left: 195px;
+  top: 0px;
+
+  font-family: 'sans-serif';
+  font-style: bold;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+#chart {
+   /* 차트 제목부터, 차트 전체 */
+  position: absolute;
+  width: 700px;
+  height: 853px;
+  left: 530px;
+  top: 0px;
+}
+#showmychart{
+  /* 차트 나오는 부분 */
+  padding-left: 50px;
+  position: absolute;
+  width: 700px;
+  height: 608px;
+  left: 0px;
+  top: 87px;
+}
+#chartletter {
+  /* 차트 제목*/
+  position: absolute;
+  width: 121px;
+  height: 55px;
+  left: 330px;
+  top: 5px;
+
+  font-family: 'sans-serif';
+  font-style: bold;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
 #container {
   display: block;
   width: 100%;
@@ -66,40 +138,11 @@
   margin: 0 auto;
 }
 
-#nodes {
-  position: absolute;
-  width: 510px;
-  height: 853px;
-  left: 106px;
-  top: 132px;
-}
 
-#nodeletter {
-  position: absolute;
-  width: 121px;
-  height: 55px;
-  left: 195px;
-  top: 0px;
 
-  font-family: 'sans-serif';
-  font-style: bold;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 47px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-}
 
-#shownodes {
-  padding-left: 50px;
-  position: absolute;
-  width: 510px;
-  height: 608px;
-  left: 0px;
-  top: 87px;
-  overflow-y: scroll;
-}
+
+
 
 .node {
   /* width: 257px; */
